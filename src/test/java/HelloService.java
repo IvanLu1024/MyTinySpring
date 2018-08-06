@@ -1,6 +1,12 @@
 public class HelloService {
 
-    public void hello(String name){
-        System.out.println("Hello Service~"+name);
+    private String text;
+
+    public void hello(){
+        System.out.println("Hello Service~"+text);
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
