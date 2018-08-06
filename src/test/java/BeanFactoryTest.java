@@ -3,7 +3,11 @@ import com.ivan.tinySpring.PropertyValue;
 import com.ivan.tinySpring.PropertyValues;
 import com.ivan.tinySpring.factory.AutowireCapableBeanFactory;
 import com.ivan.tinySpring.factory.BeanFactory;
+import com.ivan.tinySpring.io.ResourceLoader;
+import com.ivan.tinySpring.xml.XmlBeanDefinitionReader;
 import org.junit.Test;
+
+import java.util.Map;
 
 public class BeanFactoryTest {
 
@@ -89,4 +93,31 @@ public class BeanFactoryTest {
 
 
     }
+
+    /**
+     * 这里的BeanDefinition只是一些配置，我们还是用xml来初始化吧。
+     * 我们定义了BeanDefinitionReader初始化bean，它有一个实现是XmlBeanDefinitionReader。
+     */
+    @Test
+    public void test4(){
+        //1.读取xml配置文件
+        XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(new ResourceLoader());
+        try {
+            xmlBeanDefinitionReader.loadBeanDefinition("tinySpring.xml");
+            // 2.初始化BeanFactory并注册bean
+            BeanFactory beanFactory = new AutowireCapableBeanFactory();
+            for (Map.Entry<String, BeanDefinition> beanDefinitionEntry : xmlBeanDefinitionReader.getRegistry().entrySet()) {
+                beanFactory.registerBeanDefinition(beanDefinitionEntry.getKey(), beanDefinitionEntry.getValue());
+            }
+            //3.获取bean
+            HelloService helloService = (HelloService) beanFactory.getBean("helloService");
+            helloService.hello();
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
 }

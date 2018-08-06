@@ -17,6 +17,13 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.w3c.dom</groupId>
+            <artifactId>svg</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
     </dependencies>
 
 
