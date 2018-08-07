@@ -1,11 +1,13 @@
-import com.ivan.tinySpring.BeanDefinition;
-import com.ivan.tinySpring.PropertyValue;
-import com.ivan.tinySpring.PropertyValues;
-import com.ivan.tinySpring.factory.AbstractBeanFactory;
-import com.ivan.tinySpring.factory.AutowireCapableBeanFactory;
-import com.ivan.tinySpring.factory.BeanFactory;
-import com.ivan.tinySpring.io.ResourceLoader;
-import com.ivan.tinySpring.xml.XmlBeanDefinitionReader;
+import com.ivan.tinySpring.beans.beanDefinition.BeanDefinition;
+import com.ivan.tinySpring.beans.PropertyValue;
+import com.ivan.tinySpring.beans.PropertyValues;
+import com.ivan.tinySpring.beans.factory.AbstractBeanFactory;
+import com.ivan.tinySpring.beans.factory.AutowireCapableBeanFactory;
+import com.ivan.tinySpring.beans.factory.BeanFactory;
+import com.ivan.tinySpring.beans.resource.ResourceLoader;
+import com.ivan.tinySpring.beans.beanDefinition.XmlBeanDefinitionReader;
+import com.ivan.tinySpring.context.ApplicationContext;
+import com.ivan.tinySpring.context.ClassPathXmlApplicationContext;
 import org.junit.Test;
 
 import java.util.Map;
@@ -168,6 +170,20 @@ public class BeanFactoryTest {
         HelloService helloWorldService = (HelloService) beanFactory.getBean("helloService");
         helloWorldService.hello();
 
+
+    }
+
+    /**
+     * 现在BeanFactory的功能齐全了，但是使用起来有点麻烦。
+     * 于是我们引入熟悉的ApplicationContext接口，
+     * 并在AbstractApplicationContext的refresh()方法中进行bean的初始化工作。
+     * @throws Exception
+     */
+    @Test
+    public void test6() throws Exception{
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("tinySpring.xml");
+        HelloService helloService = (HelloService) applicationContext.getBean("helloService");
+        helloService.hello();
 
     }
 

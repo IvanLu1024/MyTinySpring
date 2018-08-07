@@ -1,9 +1,9 @@
 package xml;
 
-import com.ivan.tinySpring.BeanDefinition;
-import com.ivan.tinySpring.io.Resource;
-import com.ivan.tinySpring.io.ResourceLoader;
-import com.ivan.tinySpring.xml.XmlBeanDefinitionReader;
+import com.ivan.tinySpring.beans.beanDefinition.BeanDefinition;
+import com.ivan.tinySpring.beans.resource.Resource;
+import com.ivan.tinySpring.beans.resource.ResourceLoader;
+import com.ivan.tinySpring.beans.beanDefinition.XmlBeanDefinitionReader;
 import org.junit.Assert;
 import org.junit.Test;
 

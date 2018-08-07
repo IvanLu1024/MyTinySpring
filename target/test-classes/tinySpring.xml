@@ -4,6 +4,7 @@
     <bean name="color" class="Color">
 
         <property name="helloService" ref="helloService"></property>
+        <property name="name" value="red"></property>
 
     </bean>
 
