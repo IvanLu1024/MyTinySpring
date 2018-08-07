@@ -1,6 +1,7 @@
 package com.ivan.tinySpring.factory;
 
 import com.ivan.tinySpring.BeanDefinition;
+import com.ivan.tinySpring.BeanReference;
 import com.ivan.tinySpring.PropertyValue;
 
 import java.lang.reflect.Field;
@@ -14,20 +15,17 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 
     //bean的初始化
     @Override
-    protected Object doCreateBean(BeanDefinition beanDefinition) {
-        try {
+    protected Object doCreateBean(BeanDefinition beanDefinition) throws Exception {
+
             Object bean = createBeanInstance(beanDefinition);
+
+            beanDefinition.setBean(bean);
+
             applyPropertyValues(bean,beanDefinition);
             return bean;
 
-        }catch (InstantiationException e){
-            e.printStackTrace();
-        }catch (IllegalAccessException e){
-            e.printStackTrace();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        return null;
+
+
 
     }
 
@@ -46,8 +44,14 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 
             //获取私有属性的时候必须先设置Accessible为true，才能获取
             declaredField.setAccessible(true);
-            //修改属性值
-            declaredField.set(bean,propertyValue.getValue());
+            //设置属性
+            Object value = propertyValue.getValue();
+            if (value instanceof BeanReference){
+                BeanReference beanReference=(BeanReference)value;
+                
+                value=getBean(beanReference.getName());
+            }
+            declaredField.set(bean,value);
 
 
         }

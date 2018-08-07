@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
+    <bean name="color" class="Color">
+
+        <property name="helloService" ref="helloService"></property>
+
+    </bean>
+
     <bean name="helloService" class="HelloService">
         <property name="text" value="  小鲁"></property>
+        <property name="color" ref="color"></property>
     </bean>
+
+
 
 </beans>

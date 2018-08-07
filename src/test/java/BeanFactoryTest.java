@@ -1,6 +1,7 @@
 import com.ivan.tinySpring.BeanDefinition;
 import com.ivan.tinySpring.PropertyValue;
 import com.ivan.tinySpring.PropertyValues;
+import com.ivan.tinySpring.factory.AbstractBeanFactory;
 import com.ivan.tinySpring.factory.AutowireCapableBeanFactory;
 import com.ivan.tinySpring.factory.BeanFactory;
 import com.ivan.tinySpring.io.ResourceLoader;
@@ -117,6 +118,56 @@ public class BeanFactoryTest {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+    }
+
+    /**
+     * 依赖注入：我们无法处理bean之间的依赖，无法将bean注入到bean中，所以它无法称之为完整的IoC容器！
+     * 如何实现呢？我们定义一个BeanReference，来表示这个属性是对另一个bean的引用。
+     * 这个在读取xml的时候初始化，并在初始化bean的时候，进行解析和真实bean的注入。
+     *
+     * @throws Exception
+     */
+    //懒加载方式创建bean
+    @Test
+    public void test5_lazy() throws Exception{
+        // 1.读取配置
+        XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(new ResourceLoader());
+        xmlBeanDefinitionReader.loadBeanDefinition("tinySpring.xml");
+
+        // 2.初始化BeanFactory并注册bean
+        AbstractBeanFactory beanFactory = new AutowireCapableBeanFactory();
+        for (Map.Entry<String, BeanDefinition> beanDefinitionEntry : xmlBeanDefinitionReader.getRegistry().entrySet()) {
+            beanFactory.registerBeanDefinition(beanDefinitionEntry.getKey(), beanDefinitionEntry.getValue());
+        }
+
+        // 3.获取bean
+        HelloService helloWorldService = (HelloService) beanFactory.getBean("helloService");
+        helloWorldService.hello();
+
+
+    }
+
+
+    @Test
+    public void test5_PreInstantiate()throws Exception{
+        // 1.读取配置
+        XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(new ResourceLoader());
+        xmlBeanDefinitionReader.loadBeanDefinition("tinySpring.xml");
+
+        // 2.初始化BeanFactory并注册bean
+        AbstractBeanFactory beanFactory = new AutowireCapableBeanFactory();
+        for (Map.Entry<String, BeanDefinition> beanDefinitionEntry : xmlBeanDefinitionReader.getRegistry().entrySet()) {
+            beanFactory.registerBeanDefinition(beanDefinitionEntry.getKey(), beanDefinitionEntry.getValue());
+        }
+        // 3.实例化所有的bean
+        beanFactory.preInstantiateSingletons();
+
+
+        // 4.获取bean
+        HelloService helloWorldService = (HelloService) beanFactory.getBean("helloService");
+        helloWorldService.hello();
+
 
     }
 
