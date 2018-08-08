@@ -26,7 +26,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
     }
 
 
-
+    // TODO: 2018/8/7 从 XML 文件中读取类定义(bean)
     @Override
     public void loadBeanDefinition(String location) throws Exception {
         InputStream inputStream = getResourceLoader().getResource(location).getInputStream();

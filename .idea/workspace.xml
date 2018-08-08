@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AutowireCapableBeanFactory.java" line="24" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/JdkDynamicAopProxy.java" line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fa0e842-6584-4156-a183-26911f7551b1" name="Default" comment="" />
+    <list default="true" id="40b85f2b-ccb2-4793-b021-2a8715926dcd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,126 +14,123 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AbstractApplicationContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/AbstractApplicationContext.java">
+    <leaf>
+      <file leaf-file-name="testInterceptor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="430">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanDefinition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/BeanDefinition.java">
+      <file leaf-file-name="JdkDynamicAopProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/JdkDynamicAopProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="320">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanDefinitionReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/BeanDefinitionReader.java">
+      <file leaf-file-name="TimerInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TimerInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodInvocation.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/org/aopalliance/intercept/MethodInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassPathXmlApplicationContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ClassPathXmlApplicationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="26" column="55" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlBeanDefinitionReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/XmlBeanDefinitionReader.java">
+      <file leaf-file-name="Invocation.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/org/aopalliance/intercept/Invocation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-              </folding>
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputSource.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/org/xml/sax/InputSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="275" selection-start-line="275" selection-end-line="275" />
-              <folding>
-                <element signature="e#4086#4087#0" expanded="true" />
-                <element signature="e#4127#4128#0" expanded="true" />
-                <element signature="e#5427#5428#0" expanded="true" />
-                <element signature="e#5458#5459#0" expanded="true" />
-                <element signature="e#7003#7004#0" expanded="true" />
-                <element signature="e#7034#7035#0" expanded="true" />
-                <element signature="e#7712#7713#0" expanded="true" />
-                <element signature="e#7756#7757#0" expanded="true" />
-                <element signature="e#8152#8153#0" expanded="true" />
-                <element signature="e#9074#9075#0" expanded="true" />
-                <element signature="e#9105#9106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceLoader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/ResourceLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractBeanDefinitionReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/AbstractBeanDefinitionReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanFactoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="159" column="34" lean-forward="true" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/Resource.java">
+      <file leaf-file-name="tinySpring.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/tinySpring.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelloServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveMethodInvocation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/ReflectiveMethodInvocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvisedSupport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/AdvisedSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TargetSource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/TargetSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +141,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -155,35 +151,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/PropertyValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/PropertyValues.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanDefinitionReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/io/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/io/UrlResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/AbstractBeanDefinitionReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/AopProxy.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/xml/XmlBeanDefinitionReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanDefinition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanReference.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/factory/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/AdvisedSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/ReflectiveMethodInvocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/JdkDynamicAopProxy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/aop/Color.java" />
+        <option value="$PROJECT_DIR$/src/test/java/aop/testInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/TargetSource.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelloService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/factory/AutowireCapableBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/xml/XmlBeanDefinitionReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Color.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/factory/AbstractBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AbstractBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/io/ResourceLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/io/ResourceLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/io/UrlResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/context/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/context/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ClassPathXmlApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelloServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/resources/tinySpring.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/BeanFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/AbstractApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/Resource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TimerInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testInterceptor.java" />
       </list>
     </option>
   </component>
@@ -204,11 +184,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="864" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1346" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -256,6 +235,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tinySpring" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.ivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyTinySpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tinySpring" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,7 +254,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tinySpring" type="462c0819:PsiDirectoryNode" />
               <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="beanDefinition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.ivan" type="b2602c69:ProjectViewProjectNode" />
@@ -275,7 +263,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tinySpring" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.ivan" type="b2602c69:ProjectViewProjectNode" />
@@ -297,10 +286,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="com.ivan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -313,14 +298,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/10_steps_for_tiny_spring/tiny-spring-step-5-inject-bean-to-bean" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/10_steps_for_tiny_spring/tiny-spring-step-7-method-interceptor-by-jdk-dynamic-proxy" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Documents\GitHub\MyTinySpring\MyTinySpring\src\test\resources" />
+      <recent name="C:\Users\Administrator\Documents\GitHub\MyTinySpring\MyTinySpring\src\test\java\aop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,100 +326,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BeanFactoryTest.test6">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="BeanFactoryTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ivan" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BeanFactoryTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ivan" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BeanFactoryTest.test5_lazy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ivan" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
-      <option name="METHOD_NAME" value="test5_lazy" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BeanFactoryTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ivan" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="XmlBeanDefinitionReaderTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ivan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="xml" />
-      <option name="MAIN_CLASS_NAME" value="xml.XmlBeanDefinitionReaderTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -437,6 +337,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="testInterceptor.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.ivan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testInterceptor" />
+      <option name="METHOD_NAME" value="test7" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -468,20 +391,9 @@
       <properties />
       <listeners />
     </configuration>
-    <list>
-      <item itemvalue="JUnit.BeanFactoryTest.test4" />
-      <item itemvalue="JUnit.XmlBeanDefinitionReaderTest.test" />
-      <item itemvalue="JUnit.BeanFactoryTest.test5" />
-      <item itemvalue="JUnit.BeanFactoryTest.test5_lazy" />
-      <item itemvalue="JUnit.BeanFactoryTest.test6" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BeanFactoryTest.test6" />
-        <item itemvalue="JUnit.BeanFactoryTest.test5_lazy" />
-        <item itemvalue="JUnit.BeanFactoryTest.test5" />
-        <item itemvalue="JUnit.BeanFactoryTest.test4" />
-        <item itemvalue="JUnit.XmlBeanDefinitionReaderTest.test" />
+        <item itemvalue="JUnit.testInterceptor.test7" />
       </list>
     </recent_temporary>
   </component>
@@ -490,85 +402,81 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0fa0e842-6584-4156-a183-26911f7551b1" name="Default" comment="" />
-      <created>1533520004661</created>
+      <changelist id="40b85f2b-ccb2-4793-b021-2a8715926dcd" name="Default" comment="" />
+      <created>1533707052769</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1533520004661</updated>
-      <workItem from="1533520008126" duration="25032000" />
-      <workItem from="1533602757527" duration="12303000" />
-      <workItem from="1533621730393" duration="950000" />
-      <workItem from="1533622752189" duration="1538000" />
+      <updated>1533707052769</updated>
+      <workItem from="1533707054432" duration="5669000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 09h 12m 55s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 29m 36s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 09h 28m 01s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 30m 55s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 10h 47m 15s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 31m 20s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 11h 02m 41s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 31m 59s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 11h 05m 44s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 46m 05s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5_lazy - 2018.08.07 at 11h 37m 50s.xml">
-      <configuration name="BeanFactoryTest.test5_lazy" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 52m 48s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test5 - 2018.08.07 at 12h 08m 54s.xml">
-      <configuration name="BeanFactoryTest.test5" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 52m 53s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test6 - 2018.08.07 at 14h 26m 18s.xml">
-      <configuration name="BeanFactoryTest.test6" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 56m 24s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test6 - 2018.08.07 at 14h 27m 09s.xml">
-      <configuration name="BeanFactoryTest.test6" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 14h 58m 43s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BeanFactoryTest_test6 - 2018.08.07 at 14h 27m 24s.xml">
-      <configuration name="BeanFactoryTest.test6" configurationId="JUnit" />
+    <history-entry file="testInterceptor_test7 - 2018.08.08 at 15h 19m 08s.xml">
+      <configuration name="testInterceptor.test7" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39823000" />
+    <option name="totallyTimeSpent" value="5669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32899022" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005208" side_tool="true" weight="0.3626493" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.33767644" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.196875" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" visible="true" weight="0.36916396" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995657" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,506 +489,188 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/JdkDynamicAopProxy.java</url>
+          <line>20</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testInterceptor.java</url>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/XmlBeanDefinitionReader.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AutowireCapableBeanFactory.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AbstractBeanFactory.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java</url>
-          <line>162</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java</url>
-          <line>157</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="17" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanReference.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="154">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/UrlResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/AbstractApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/XmlBeanDefinitionReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="141">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ClassPathXmlApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AutowireCapableBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/ResourceLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="78" lean-forward="true" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/UrlResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AutowireCapableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/PropertyValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2662">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/XmlBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/BeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/tinySpring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/AccessibleObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="125" column="16" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="462">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/xml/XmlBeanDefinitionReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/beans.xml" />
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="362" column="19" selection-start-line="362" selection-start-column="14" selection-end-line="362" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/java/lang/reflect/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="740" selection-start-line="740" selection-end-line="740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/PropertyValue.java">
+    <entry file="jar://D:/Program Files/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/org/aopalliance/intercept/MethodInvocation.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/PropertyValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/BeanReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AbstractBeanFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/AopProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Color.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/aop/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/aop/Color.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelloService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="37" />
-          <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/tinySpring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="220">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelloService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelloServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/ReflectiveMethodInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/factory/AutowireCapableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="220">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/UrlResource.java">
+    <entry file="jar://D:/Program Files/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/org/aopalliance/intercept/Invocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="175">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/MavenRepository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/org/aopalliance/intercept/MethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TimerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/AdvisedSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/TargetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/aop/JdkDynamicAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.7.0_79/src.zip!/org/xml/sax/InputSource.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
-          <folding>
-            <element signature="e#4086#4087#0" expanded="true" />
-            <element signature="e#4127#4128#0" expanded="true" />
-            <element signature="e#5427#5428#0" expanded="true" />
-            <element signature="e#5458#5459#0" expanded="true" />
-            <element signature="e#7003#7004#0" expanded="true" />
-            <element signature="e#7034#7035#0" expanded="true" />
-            <element signature="e#7712#7713#0" expanded="true" />
-            <element signature="e#7756#7757#0" expanded="true" />
-            <element signature="e#8152#8153#0" expanded="true" />
-            <element signature="e#9074#9075#0" expanded="true" />
-            <element signature="e#9105#9106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BeanFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="159" column="34" lean-forward="true" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="55" />
+        <state relative-caret-position="430">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/context/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/BeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/BeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/AbstractBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/beanDefinition/XmlBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ivan/tinySpring/beans/resource/ResourceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

@@ -9,8 +9,5 @@
         <module name="com.ivan" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="com.ivan" target="1.6" />
-    </bytecodeTargetLevel>
   </component>
 </project>

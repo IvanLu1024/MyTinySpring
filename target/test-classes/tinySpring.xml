@@ -8,7 +8,7 @@
 
     </bean>
 
-    <bean name="helloService" class="HelloService">
+    <bean name="helloService" class="HelloServiceImpl">
         <property name="text" value="  小鲁"></property>
         <property name="color" ref="color"></property>
     </bean>
