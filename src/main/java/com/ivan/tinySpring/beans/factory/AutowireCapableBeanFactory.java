@@ -1,10 +1,12 @@
 package com.ivan.tinySpring.beans.factory;
 
+import com.ivan.tinySpring.aop.BeanFactoryAware;
 import com.ivan.tinySpring.beans.beanDefinition.BeanDefinition;
 import com.ivan.tinySpring.BeanReference;
 import com.ivan.tinySpring.beans.PropertyValue;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * 可以自动装配内容的BeanFactory
@@ -26,44 +28,45 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
      * @throws Exception
      */
 
-    @Override
-    protected Object doCreateBean(BeanDefinition beanDefinition) throws Exception {
-
-            Object bean = createBeanInstance(beanDefinition);
-
-            beanDefinition.setBean(bean);
-
-            applyPropertyValues(bean,beanDefinition);
-            return bean;
 
 
-
-
-    }
-
-    // TODO: 2018/8/6 将bean实例化
-    protected Object createBeanInstance(BeanDefinition beanDefinition) throws Exception{
-        return beanDefinition.getBeanClass().newInstance();
-
-
-    }
 
     // TODO: 2018/8/6 注入所有属性
     protected void applyPropertyValues(Object bean,BeanDefinition beanDefinition) throws Exception{
+        //首先判断这个bean是否有操作容器的权限
+        if (bean instanceof BeanFactoryAware){
+            ((BeanFactoryAware)bean).setBeanFactory(this);
+        }
+        
+        
         for (PropertyValue propertyValue:beanDefinition.getPropertyValues().getPropertyValues()){
-            //获取类或接口的指定已声明字段
+           /* //获取类或接口的指定已声明字段
             Field declaredField=bean.getClass().getDeclaredField(propertyValue.getName());
 
             //获取私有属性的时候必须先设置Accessible为true，才能获取
             declaredField.setAccessible(true);
-            //设置属性
+            //设置属性*/
             Object value = propertyValue.getValue();
+            
             if (value instanceof BeanReference){
                 BeanReference beanReference=(BeanReference)value;
                 
                 value=getBean(beanReference.getName());
             }
-            declaredField.set(bean,value);
+            // TODO: 2018/8/9  
+            try {
+                Method declaredMethod = bean.getClass().getDeclaredMethod(
+                        "set" + propertyValue.getName().substring(0, 1).toUpperCase()
+                                + propertyValue.getName().substring(1), value.getClass());
+                declaredMethod.setAccessible(true);
+
+                declaredMethod.invoke(bean, value);
+            } catch (NoSuchMethodException e) {
+                Field declaredField = bean.getClass().getDeclaredField(propertyValue.getName());
+                declaredField.setAccessible(true);
+                declaredField.set(bean, value);
+            }
+           
 
 
         }

@@ -12,6 +12,12 @@ public class AdvisedSupport {
     //方法拦截器
     private MethodInterceptor methodInterceptor;
 
+    private MethodMatcher methodMatcher;
+
+    public void setMethodMatcher(MethodMatcher methodMatcher) {
+        this.methodMatcher = methodMatcher;
+    }
+
     public TargetSource getTargetSource() {
         return targetSource;
     }

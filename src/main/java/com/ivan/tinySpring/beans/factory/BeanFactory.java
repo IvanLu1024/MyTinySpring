@@ -14,6 +14,5 @@ public interface BeanFactory {
     // TODO: 2018/8/6 获取Bean
     public Object getBean(String name) throws Exception;
 
-    // TODO: 2018/8/6 注册BeanDefinition
-    public void registerBeanDefinition(String name,BeanDefinition beanDefinition) throws Exception;
+
 }

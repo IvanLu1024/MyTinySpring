@@ -13,6 +13,16 @@
         <property name="color" ref="color"></property>
     </bean>
 
+    <bean name="timeInterceptor" class="TimerInterceptor"></bean>
+
+    <bean name="autoProxyCreator" class="com.ivan.tinySpring.aop.AspectJAwareAdvisorAutoProxyCreator"></bean>
+
+    <bean name="aspectjAspect" class="com.ivan.tinySpring.aop.AspectJExpressionPointcutAdvisor">
+        <property name="advice" ref="timeInterceptor"></property>
+        <property name="expression" value="execution(* *.*(..))"></property>
+    </bean>
+
+
 
 
 </beans>
