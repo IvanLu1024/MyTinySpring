@@ -6,20 +6,27 @@ package com.ivan.tinySpring.aop;
 
 public class TargetSource {
     //代理对象的类型
-    private Class<?>[] targetClass;
+    private Class<?> targetClass;
     //代理对象的实例
     private Object target;
 
-    public TargetSource( Object target,Class<?>... targetClass) {
+    private Class<?>[] interfaces;
+
+    public TargetSource( Object target,Class<?> targetClass,Class<?>... interfaces) {
         this.targetClass = targetClass;
         this.target = target;
+        this.interfaces=interfaces;
     }
 
-    public Class<?>[] getTargetClass() {
+    public Class<?> getTargetClass() {
         return targetClass;
     }
 
     public Object getTarget() {
         return target;
+    }
+
+    public Class<?>[] getInterfaces() {
+        return interfaces;
     }
 }

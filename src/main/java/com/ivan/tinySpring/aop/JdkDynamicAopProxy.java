@@ -10,33 +10,28 @@ import java.lang.reflect.Proxy;
  * 基于JDK的AOP动态代理
  */
 public class JdkDynamicAopProxy implements AopProxy,InvocationHandler {
-    private AdvisedSupport advisedSupport;
+    private AdvisedSupport advised;
 
     public JdkDynamicAopProxy(AdvisedSupport advisedSupport) {
-        this.advisedSupport = advisedSupport;
+        this.advised = advisedSupport;
     }
 
     @Override
     public Object getProxy() {
         return Proxy.newProxyInstance(getClass().getClassLoader(),
-                advisedSupport.getTargetSource().getTargetClass(),this);
+                advised.getTargetSource().getInterfaces(),this);
     }
 
     @Override
     public Object invoke(final Object proxy,final Method method,final Object[] args) throws Throwable {
-        MethodInterceptor interceptor=advisedSupport.getMethodInterceptor();
-        /*if (advisedSupport.getMethodMatcher()!=null
-                &&advisedSupport.getMethodMatcher().matches(method,
-                    advisedSupport.getTargetSource().getTarget().getClass()))*/
-       /* if (advisedSupport.getMethodMatcher().matches(method,
-                advisedSupport.getTargetSource().getTarget().getClass())){*/
-            return //method.invoke(advisedSupport.getTargetSource().getTarget(),args);
-                    interceptor.invoke(new ReflectiveMethodInvocation(advisedSupport.getTargetSource().getTarget(),
+        MethodInterceptor methodInterceptor = advised.getMethodInterceptor();
+        if (advised.getMethodMatcher() != null
+                && advised.getMethodMatcher().matches(method, advised.getTargetSource().getTarget().getClass())) {
+            return methodInterceptor.invoke(new ReflectiveMethodInvocation(advised.getTargetSource().getTarget(),
                     method, args));
-       /* } else {
-            return method.invoke(advisedSupport.getTargetSource().getTarget(),args);
-
-        }*/
+        } else {
+            return method.invoke(advised.getTargetSource().getTarget(), args);
+        }
 
 
 

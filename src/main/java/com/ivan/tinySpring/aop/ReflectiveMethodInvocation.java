@@ -11,11 +11,11 @@ import java.lang.reflect.Method;
  *      在方法调用的时候给予拦截器
  */
 public class ReflectiveMethodInvocation implements MethodInvocation {
-    private Object target;
+    protected Object target;
 
-    private Method method;
+    protected Method method;
 
-    private Object[] args;
+    protected Object[] args;
 
     public ReflectiveMethodInvocation(Object target, Method method, Object[] args) {
         this.target = target;

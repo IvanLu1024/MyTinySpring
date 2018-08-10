@@ -44,14 +44,14 @@ public class AspectJAwareAdvisorAutoProxyCreator implements BeanPostProcessor,Be
         for (AspectJExpressionPointcutAdvisor advisor:advisors){
             //判断是否为需要代理的对象，如果是则利用动态代理生成对象并返回
             if (advisor.getPointcut().getClassFilter().matches(bean.getClass())){
-                AdvisedSupport advisedSupport = new AdvisedSupport();
+                ProxyFactory advisedSupport = new ProxyFactory();
                 advisedSupport.setMethodInterceptor((MethodInterceptor) advisor.getAdvice());
 
                 advisedSupport.setMethodMatcher(advisor.getPointcut().getMethodMatcher());
 
-                TargetSource targetSource = new TargetSource(bean,bean.getClass().getInterfaces());
+                TargetSource targetSource = new TargetSource(bean,bean.getClass(),bean.getClass().getInterfaces());
                 advisedSupport.setTargetSource(targetSource);
-                return new JdkDynamicAopProxy(advisedSupport).getProxy();
+                return advisedSupport.getProxy();
             }
 
         }
