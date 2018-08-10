@@ -33,4 +33,8 @@ public class AdvisedSupport {
     public void setMethodInterceptor(MethodInterceptor methodInterceptor) {
         this.methodInterceptor = methodInterceptor;
     }
+
+    public MethodMatcher getMethodMatcher() {
+        return methodMatcher;
+    }
 }

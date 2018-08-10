@@ -1,5 +1,8 @@
 package com.ivan.tinySpring.aop;
 
+import com.ivan.tinySpring.aop.ClassFilter;
+import com.ivan.tinySpring.aop.MethodMatcher;
+import com.ivan.tinySpring.aop.Pointcut;
 import org.aspectj.weaver.tools.PointcutExpression;
 import org.aspectj.weaver.tools.PointcutParser;
 import org.aspectj.weaver.tools.PointcutPrimitive;
@@ -9,7 +12,10 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AspectJExpressionPointcut implements Pointcut,ClassFilter,MethodMatcher {
+/**
+ * @author yihua.huang@dianping.com
+ */
+public class AspectJExpressionPointcut implements Pointcut, ClassFilter, MethodMatcher {
 
     private PointcutParser pointcutParser;
 
@@ -81,6 +87,6 @@ public class AspectJExpressionPointcut implements Pointcut,ClassFilter,MethodMat
             return false;
         }
         // TODO:其他情况不判断了！见org.springframework.aop.aspectj.RuntimeTestWalker
-        return true;
+        return false;
     }
 }

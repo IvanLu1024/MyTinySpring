@@ -32,7 +32,7 @@ public class AspectJExpressionPointcutTest {
     //测试方法拦截器
     @Test
     public void testMethodInterceptor() throws Exception {
-        String expression = "execution(* *.*(..))";
+        String expression = "execution(* TimerInterceptor.*(..))";
         AspectJExpressionPointcut aspectJExpressionPointcut = new AspectJExpressionPointcut();
         aspectJExpressionPointcut.setExpression(expression);
         boolean matches = aspectJExpressionPointcut.getMethodMatcher().matches(HelloServiceImpl.class.getDeclaredMethod("hello"),HelloServiceImpl.class);

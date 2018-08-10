@@ -24,7 +24,7 @@ public abstract class AbstractBeanFactory implements BeanFactory {
     private final List<String> beanDefinitionNames=new ArrayList<String>();
 
     //存放BeanPostProcessor的列表--缓存
-    private final List<BeanPostProcessor> beanPostProcessors=new ArrayList<BeanPostProcessor>();
+    private  List<BeanPostProcessor> beanPostProcessors=new ArrayList<BeanPostProcessor>();
 
 
     // TODO: 2018/8/7 获取 Bean 时，如果 Bean 已经存在于容器中，则返回之，否则则调用 doCreateBean 方法装配一个 Bean
@@ -41,9 +41,30 @@ public abstract class AbstractBeanFactory implements BeanFactory {
 
             bean=doCreateBean(beanDefinition);
 
-            initializeBean(bean,name);
+            bean=initializeBean(bean,name);
+        }
+        //bean=initializeBean(bean,name);
+        return bean;
+
+    }
+
+    /**
+     * 利用BeanPostProcessor初始化bean
+     * @param bean
+     * @param beanName
+     * @return
+     */
+    protected Object initializeBean(Object bean,String beanName) throws Exception{
+        // TODO: 2018/8/9 初始化之前的操作
+        for (BeanPostProcessor postProcessor:beanPostProcessors){
+            postProcessor.postProcessorBeforeInitialization(bean,beanName);
+        }
+        // TODO: 2018/8/9 初始化之后的操作
+        for (BeanPostProcessor postProcessor:beanPostProcessors){
+            postProcessor.postProcessorAfterInitialization(bean,beanName);
         }
         return bean;
+
 
     }
 
@@ -66,7 +87,7 @@ public abstract class AbstractBeanFactory implements BeanFactory {
      * @throws Exception
      */
     public List getBeanForType(Class type)throws Exception{
-        List<Object> beans=new ArrayList<Object>();
+        List beans=new ArrayList<Object>();
         for (String beanDefinitionName:beanDefinitionNames){
             if (type.isAssignableFrom(beanDefinitionMap.get(beanDefinitionName).getBeanClass())){
                 beans.add(getBean(beanDefinitionName));
@@ -106,25 +127,7 @@ public abstract class AbstractBeanFactory implements BeanFactory {
 
     };
 
-    /**
-     * 利用BeanPostProcessor初始化bean
-     * @param bean
-     * @param beanName
-     * @return
-     */
-    protected Object initializeBean(Object bean,String beanName) throws Exception{
-        // TODO: 2018/8/9 初始化之前的操作
-        for (BeanPostProcessor postProcessor:beanPostProcessors){
-            postProcessor.postProcessorBeforeInitialization(bean,beanName);
-        }
-        // TODO: 2018/8/9 初始化之后的操作
-        for (BeanPostProcessor postProcessor:beanPostProcessors){
-            postProcessor.postProcessorAfterInitialization(bean,beanName);
-        }
-        return bean;
 
-
-    }
 
     /**
      * 注入属性

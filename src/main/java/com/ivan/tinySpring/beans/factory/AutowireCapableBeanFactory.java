@@ -62,15 +62,12 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 
                 declaredMethod.invoke(bean, value);
             } catch (NoSuchMethodException e) {
+                //e.printStackTrace();
+
                 Field declaredField = bean.getClass().getDeclaredField(propertyValue.getName());
                 declaredField.setAccessible(true);
                 declaredField.set(bean, value);
             }
-           
-
-
         }
-
-
     }
 }
